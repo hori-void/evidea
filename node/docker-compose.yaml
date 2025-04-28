@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: /mnt/c/private/dev/react-go-api/docker/node/Dockerfile
+    volumes:
+      - /mnt/c/private/dev/react-go-api/docker/node/frontend:/home/node/app
+    tty: true
+    ports:
+      - 5173:5173

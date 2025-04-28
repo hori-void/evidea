@@ -1,0 +1,14 @@
+.stickyroom {
+    padding: 15px;
+    width: 100%;
+    overflow: auto;
+}
+
+.stickyroom-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(273px,1fr));
+    grid-template-rows: minmax(180px,auto);
+    grid-auto-rows: 180px; 
+    gap: clamp(25px, 4vw, 30px);
+    padding: 40px;
+}

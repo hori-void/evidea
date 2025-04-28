@@ -1,0 +1,13 @@
+# Node modules
+frontend/node_modules/
+
+# Build files
+frontend/build/
+
+# Go binaries
+backend/bin/
+backend/*.exe
+backend/*.out
+
+# Docker
+*.env

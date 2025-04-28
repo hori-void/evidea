@@ -1,0 +1,33 @@
+.header {
+    position:sticky;
+    top:0;
+    height:45px;
+    color: white;
+    background-color:#4d4d4d;
+    align-content: center;
+    padding:5px 15px 5px 15px;
+    font-size:20px;
+    display: flex;
+}
+
+.title-button {
+    font-size: 25px;
+    align-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title-button:hover {
+    color:#03af7a;
+}
+
+.login-open-button {
+    margin-left: auto;
+    align-content: center;
+    cursor: pointer;
+}
+
+.login-open-button:hover {
+    color:#03af7a;
+    /* font-weight: bold; */
+}

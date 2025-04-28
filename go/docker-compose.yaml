@@ -1,0 +1,13 @@
+# version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: /mnt/c/private/dev/react-go-api/docker/go/Dockerfile
+      # dockerfile: ./docker/go/Dockerfile
+    volumes:
+      - ./backend/:/go/src/app
+    tty: true
+    ports:
+      - 8080:8080

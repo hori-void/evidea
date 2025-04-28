@@ -1,0 +1,21 @@
+.sticky {
+    position: relative;
+    background-color: red;
+    padding:20px;
+    /* border:1px solid; */
+    background: #f5f5f5;
+}
+
+.sticky:before {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    z-index: -11;
+    width: 90%;
+    height: 25px;
+    /* box-shadow: 横方向 縦方向 ぼかし 影色 */
+    box-shadow: 0 15px 15px #777;
+    background: #777;
+    transform: rotate(3deg);
+    content: '';
+  }
