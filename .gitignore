@@ -9,5 +9,7 @@ backend/bin/
 backend/*.exe
 backend/*.out
 
+postgres
+
 # Docker
 *.env

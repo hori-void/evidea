@@ -1,14 +1,15 @@
 import { useState } from "react"
 import { useModal } from "../../hooks/useModal.ts"
 import { loginAuth } from "../../utils/api/usersApi.ts";
-import { LoginInfo } from "../../types/state.ts";
+import { LoginInfo, OrgInfo } from "../../types/state.ts";
 import '../../css/LoginModal.css'
 
 type Props = {
+    setLoginState: React.Dispatch<React.SetStateAction<boolean>>;
     setLoginInfo: React.Dispatch<React.SetStateAction<LoginInfo>>;
 };
 
-const LoginModal = ({ setLoginInfo }: Props) => {
+const LoginModal = ({ setLoginState,setLoginInfo }: Props) => {
     const [inputId,setInputId] = useState<string>("");
     const [inputPassword,setInputPassword] = useState<string>("");
     const { modalStatus, closeModal, openModal } = useModal(true);
@@ -29,6 +30,8 @@ const LoginModal = ({ setLoginInfo }: Props) => {
                     bio: bio,
                 }
             );
+
+            setLoginState(true);
             closeModal();
         } catch(err) {
 
